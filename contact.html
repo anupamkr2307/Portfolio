@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Anupam Kumar</title>
+  <link href="portfolio.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gradient text-white">
+  <!-- Navbar -->
+  <nav class="navbar fixed w-full z-50 py-4">
+    <div class="container mx-auto px-4 flex justify-between items-center">
+      <a href="index.html" class="text-2xl font-bold text-indigo-400">ANUPAM KUMAR</a>
+      <div class="hidden md:flex space-x-8">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="projects.html" class="nav-link">Projects</a>
+        <a href="skills.html" class="nav-link">Skills</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </div>
+      <button class="md:hidden"><i class="fas fa-bars text-xl"></i></button>
+    </div>
+  </nav>
+
+  <!-- Contact -->
+  <section id="contact" class="py-20">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center">Get In Touch</h2>
+      <form class="contact-form max-w-xl mx-auto space-y-4">
+        <input type="text" placeholder="Your Name" class="w-full p-3 rounded">
+        <input type="email" placeholder="Your Email" class="w-full p-3 rounded">
+        <textarea rows="5" placeholder="Your Message" class="w-full p-3 rounded"></textarea>
+        <button type="submit" class="btn-primary px-6 py-3 rounded-full">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-8 bg-black text-center text-white">
+    <p>&copy; 2025 ANUPAM KUMAR. All Rights Reserved.</p>
+  </footer>
+
+  <script src="portfolio.js"></script>
+</body>
+</html>
