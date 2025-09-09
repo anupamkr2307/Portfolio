@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+
+body {
+    font-style: italic;
+    background-color: #82149a;
+    color: #f0f0f0;
+    overflow-x: hidden;
+}
+
+.bg-gradient {
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 100%);
+}
+
+.navbar {
+    backdrop-filter: blur(10px);
+    background-color: rgba(10, 10, 10, 0.8);
+}
+
+.nav-link {
+    position: relative;
+    overflow: hidden;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #6366f1;
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.hero {
+    height: 100vh;
+    position: relative;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at center, rgba(99, 102, 241, 0.1) 0%, rgba(10, 10, 10, 0) 70%);
+    pointer-events: none;
+}
+
+.typewriter h1 {
+    overflow: hidden;
+    border-right: 2px solid #6366f1;
+    white-space: nowrap;
+    margin: 0 auto;
+    animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #6366f1 }
+}
+
+.card {
+    background: rgba(26, 26, 46, 0.8);
+    border: 1px solid rgba(99, 102, 241, 0.2);
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(99, 102, 241, 0.2);
+    border-color: rgba(99, 102, 241, 0.5);
+}
+
+.project-image {
+    height: 200px;
+    object-fit: cover;
+}
+
+.skill-bar {
+    height: 10px;
+    margin-top: 6px;
+    background: rgba(99, 102, 241, 0.2);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.skill-progress {
+    height: 100%;
+    background: linear-gradient(90deg, #6366f1, #8b5cf6);
+}
+
+.social-icon {
+    transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: translateY(-3px) scale(1.1);
+    color: #6366f1;
+}
+
+.contact-form input, .contact-form textarea {
+    background-color: rgba(26, 26, 46, 0.8);
+    border: 1px solid rgba(99, 102, 241, 0.2);
+    color: #f0f0f0;
+    transition: all 0.3s ease;
+}
+
+.contact-form input:focus, .contact-form textarea:focus {
+    border-color: #6366f1;
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.2);
+}
+
+.btn-primary {
+    background: linear-gradient(90deg, #6366f1, #8b5cf6);
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(99, 102, 241, 0.4);
+}
+
+.slideshow {
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.slick-slide {
+    padding: 0 10px;
+}
+
+/* Animated background */
+.animated-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+.floating-shape {
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(99, 102, 241, 0.1);
+    animation: float 15s infinite linear;
+}
+
+@keyframes float {
+    0% {
+        transform: translate(0, 0) rotate(0deg);
+    }
+    50% {
+        transform: translate(100px, 100px) rotate(180deg);
+    }
+    100% {
+        transform: translate(0, 0) rotate(360deg);
+    }
+}
